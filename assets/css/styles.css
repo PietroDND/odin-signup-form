@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #ff6900;
+}
+
+html {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+.logo-section {
+    width: 40%;
+    background-image: url(../plane-image-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-section-container {
+    height: 100%;
+    padding: 1rem;
+    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.2));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#company-logo {
+    width: min(30vw, 250px);
+    cursor: pointer;
+}
+
+.logo-section p {
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.logo-section p strong {
+    color: var(--orange);
+}
+
+.form-section {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: min(1000px, 100%);
+    padding: 2rem;
+    background-color: white;
+}
+
+form h1 {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+form fieldset {
+    display: flex;
+    border: none;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+form .input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form .input-container label {
+    opacity: 0.8;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+form .input-container input {
+    width: 20vw;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+form .input-container input:focus {
+    outline: 1px solid var(--orange);
+}
+
+form .input-container .error-msg{
+    margin-top: .3rem;
+    color: red;
+    font-size: .7rem;
+}
+
+form .submit-btn {
+    padding: 10px 40px;
+    background-color: var(--orange);
+    color: white;
+    font-size: .8rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+form .login-box {
+    font-size: .8rem;
+}
+
+form .login-box a {
+    color: var(--orange);
+}
+
+#password:invalid,
+#confirm-password:invalid {
+    outline: 1px solid red;
+}
+
+.disabled {
+    background-color: gray !important;
+    cursor: not-allowed !important;
+}
